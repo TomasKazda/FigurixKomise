@@ -1,0 +1,93 @@
+.token {
+    box-sizing: border-box;
+    width: 160px;
+    height: 160px;
+    border: 26px solid transparent;
+    border-radius: 50%;
+    background: transparent;
+    background-clip: padding-box;
+}
+
+.token .tokenimg>span {
+    display: none;
+}
+
+.token .tokenimg {
+    display: block;
+    position: relative;
+    height: 100%;
+    width: 100%;
+    background: center / contain no-repeat transparent content-box;
+    background-clip: content-box;
+    padding: 9.3328px;
+    box-sizing: border-box;
+}
+
+.token:not(.img) .tokenimg::after {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    border: 1px solid rgba(0, 0, 0, .2);
+    border-radius: 50%;
+    box-sizing: border-box;
+}
+
+.token.img1 .tokenimg {
+    background-image: url("./images/1.svg");
+}
+
+.token.img2 .tokenimg {
+    background-image: url("./images/2.svg");
+}
+
+.token.img3 .tokenimg {
+    background-image: url("./images/3.svg");
+}
+
+.token.img4 .tokenimg {
+    background-image: url("./images/4.svg");
+}
+
+.token.img5 .tokenimg {
+    background-image: url("./images/5.svg");
+}
+
+.token.img6 .tokenimg {
+    background-image: url("./images/6.svg");
+}
+
+.token.outcolor1 {
+    border-color: red;
+}
+
+.token.outcolor2 {
+    border-color: blue;
+}
+
+.token.outcolor3 {
+    border-color: rgb(255, 200, 10);
+}
+
+.token.outcolor4 {
+    border-color: rgb(30, 255, 10);
+}
+
+.token.incolor1 {
+    background-color: red;
+}
+
+.token.incolor2 {
+    background-color: blue;
+}
+
+.token.incolor3 {
+    background-color: rgb(255, 200, 10);
+}
+
+.token.incolor4 {
+    border-color: rgb(30, 255, 10); 
+}

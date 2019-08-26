@@ -1,0 +1,8 @@
+.tokendice {
+    display: flex;
+    justify-content: center;
+}
+.tokendice .message {
+    font-weight: bolder;
+    font-size: 2em;
+}
