@@ -66,11 +66,14 @@ export default class figurixGame {
     {
         const newTokens = [];
         
-            //new dataToken(1, 1, 1, 1);
-            //new dataToken(2, 1, 1, 2);
-            //new dataToken(3, 1, 1, 3);
-            //new dataToken(1, 2, 1, 4);
-            //new dataToken(2, 2, 1, 5);
+        let idCounter = 1;
+        for (let img = 1; img <= imgCount; img++) {
+            for (let innr = 1; innr <= innerCount; innr++) {
+                for (let outr = 1; outr <= outerCount; outr++) {
+                    newTokens.push(new dataToken(outr, innr, img, idCounter++));
+                }
+            }
+        }
         
         figurixGame._shuffleArray(newTokens);
         return newTokens;
